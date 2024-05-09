@@ -3,9 +3,9 @@ package culturemedia.model;
 public class Video {
 
     private String code;
-    private String title;
+    public String title;
     private String description;
-    private Double duration;
+    public Double duration;
 
     public Video(String code, String title, String description, Double duration) {
         this.code = code;
