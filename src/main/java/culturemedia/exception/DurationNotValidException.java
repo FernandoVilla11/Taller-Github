@@ -1,4 +1,4 @@
-package exception;
+package culturemedia.exception;
 
 import java.text.MessageFormat;
 
