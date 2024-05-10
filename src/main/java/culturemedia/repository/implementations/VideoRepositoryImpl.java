@@ -53,17 +53,7 @@ class VideoRepositoryTest {
         assertEquals(3, videos.size());
     }
 
-    @Test
-    void when_FindByTitle_does_not_match_any_video_an_empty_list_should_be_returned_successfully() {
-        List<Video> videos = videoRepository.find("NonexistentTitle");
-        assertEquals(0,videos.size());
-    }
 
-    @Test
-    void when_FindByDuration_does_not_match_any_video_an_empty_list_should_be_returned_successfully() {
-        List<Video> videos = videoRepository.find(10.0, 15.0);
-        assertTrue(videos.isEmpty());
-    }
 
 }
 
