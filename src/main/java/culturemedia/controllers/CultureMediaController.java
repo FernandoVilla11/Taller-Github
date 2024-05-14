@@ -6,8 +6,8 @@ import culturemedia.exception.VideoNotFoundException;
 import culturemedia.model.Video;
 import culturemedia.repository.implementations.ViewsRepositoryImpl;
 import culturemedia.service.implement.CultureMediaServiceImplement;
-import culturemedia.repository.Implement.VideoRepositoryImplement;
-import culturemedia.repository.Implement.ViewsRepositoryImplement;
+import culturemedia.repository.implementations.VideoRepositoryImpl;
+
 import culturemedia.service.CultureMediaService;
 
 import org.springframework.http.HttpStatus;
@@ -28,14 +28,9 @@ public class CultureMediaController {
     private final CultureMediaServiceImplement cultureMediaService;
 
 
-    public CultureMediaController(CultureMediaServiceImplement cultureMediaService) {
-        this.cultureMediaService = new CultureMediaServiceImplement;
-    }
-
     public CultureMediaController() {
         this.cultureMediaService = new CultureMediaServiceImplement(new VideoRepositoryImpl(), new ViewsRepositoryImpl());
     }
-
 
 
     @GetMapping("/videos")
@@ -53,3 +48,4 @@ public class CultureMediaController {
     public Video save(@RequestBody @Valid Video video) {
         return cultureMediaService.save(video);
     }
+}
