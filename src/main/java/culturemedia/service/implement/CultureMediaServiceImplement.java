@@ -14,7 +14,7 @@ public class CultureMediaServiceImplement implements CultureMediaService {
     private VideoRepository videoRepository;
     private ViewsRepository viewsRepository;
 
-    public CultureMediaServiceImplement(VideoRepository videoRepository, Object o) {
+    public CultureMediaServiceImplement(VideoRepository videoRepository, ViewsRepository viewsRepository) {
         this.videoRepository = videoRepository;
         this.viewsRepository = viewsRepository;
     }

@@ -6,7 +6,7 @@ import culturemedia.repository.VideoRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import culturemedia.model.Video;
-import culturemedia.repository.impl.VideoRepositoryImpl;
+import culturemedia.repository.implementations.VideoRepositoryImpl;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class VideoRepositoryTest {
